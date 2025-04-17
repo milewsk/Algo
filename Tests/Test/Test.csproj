@@ -21,10 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Finding\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\..\Algo\Algo\Algo.csproj" />
     </ItemGroup>
 
