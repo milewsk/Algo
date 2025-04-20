@@ -27,4 +27,19 @@ public class LinearSerachTest
         
         Assert.Equal(target, sum);
     }
+
+
+    [Theory]
+    [InlineData(new int[]{1,2,3,4,5,10}, 5, 4)]
+    [InlineData(new int[]{1,2,3,4,10}, 5, -1)]
+    public void TestSearch(int[]? numbers, int target,int expectedValue)
+    {
+        // Arrange
+        
+        // Act
+        var result = LinearSearch.Search(numbers, target);
+        
+        // Assert
+        Assert.Equal(expectedValue, result);
+    }
 }
