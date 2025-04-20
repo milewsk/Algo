@@ -5,8 +5,7 @@ public static class LinearSearch
     public static int Search(int[]? array, int target)
     {
         if (array is null || array.Length == 0) return -1;
-        if(target < array[0] || target > array[array.Length - 1]) return -1;
-
+        
         for (int i = 1; i < array.Length; i++)
         {
             if (array[i] == target) return i;
